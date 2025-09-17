@@ -11,7 +11,7 @@ function exibirTextoNaTela(tag, texto) {
 
 function exibirMensagemInicial() {
   exibirTextoNaTela('h1','Jogo The Number');
-  exibirTextoNaTela('p','Escolha um número de 1 a 10');
+  exibirTextoNaTela('p','Escolha um número de 1 a 10:');
 }
 
 exibirMensagemInicial();
@@ -27,9 +27,9 @@ function verificarChute() {
     document.getElementById('reiniciar').removeAttribute('disabled');
   } else {
     if (chute > numeroSecreto) {
-      exibirTextoNaTela('p', 'O número secreto é menor');
+      exibirTextoNaTela('p', 'O número secreto é menor.');
     } else {
-      exibirTextoNaTela('p', 'O número secreto é maior');
+      exibirTextoNaTela('p', 'O número secreto é maior.');
     }
     tentativas++;
     limparCampo();
